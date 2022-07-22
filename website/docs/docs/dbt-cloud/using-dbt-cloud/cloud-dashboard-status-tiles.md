@@ -54,7 +54,8 @@ Looker does not allow you to directly embed HTML, and instead requires creating 
 <Lightbox src="/img/docs/dbt-cloud/using-dbt-cloud/dashboard-status-tiles/custom-looker.jpeg"/>
 
 ### Tableau
-Adding a dbt dashboard status tile is simply done by adding a web part to your Tableau dashboard and inserting the 'iframe src' url.
+Adding a dbt dashboard status tile is simply done by adding a web part to your Tableau dashboard and inserting the 'iframe src' url in the format:
+https://metadata.cloud.getdbt.com/exposure-tile?name=<exposure_name>&jobId=<job_id>&token=<metadata_only_token>
   
 The example below demonstrates how to to add a dbt dashboard status tile using a show/hide button so the tile can be displayed or hidden by the end user:
 
